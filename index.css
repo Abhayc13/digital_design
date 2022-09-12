@@ -38,12 +38,33 @@ section .main_header .main_body2 ul li a
     letter-spacing: 0.02em;
     color: #1E1C31;
 }
+.main_header .main_body2 .main_body_inner .checkbox
+{
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
 section .main_header .main_body2 .main_body_inner ul
 {
     display: flex;
     flex-wrap: wrap;
 }
 section .main_header .main_body2 ul li a:focus
+{
+    color: #4270EC;
+    font-weight: 600;
+}
+section .main_header .main_body2 ul li a:hover
+{
+    color: #4270EC;
+    font-weight: 600;
+    transition: all 300ms ease-in-out;
+}
+section .main_header .main_body2 ul li a:active
 {
     color: #4270EC;
     font-weight: 600;
@@ -71,4 +92,105 @@ section .main_header .main_body2 ul .tab5
 section .main_header .main_body2 ul .tab6
 {
     flex-basis: 17%;
+}
+.checkbtn
+{
+    font-size: 40px;
+    color: #000000;
+    float: right;
+}
+input#check {
+    display: none;
+}
+@media(min-width:900px) and (max-width:2560px)
+{
+    .checkbtn
+    {
+        display: none;
+    }
+}
+@media(max-width:899px)
+{
+    section .main_header
+    {
+        display: block;
+    }
+    section .main_header .main_body1
+    {
+        flex-basis: 100%;
+    }
+    section .main_header .main_body2 .main_body_inner ul
+    {
+        display: block;
+        left: -100%;
+        transition: all 0.5s;
+    }
+    section .main_header .main_body2 ul .tab1
+{
+    flex-basis: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section .main_header .main_body2 ul .tab2
+{
+    flex-basis: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section .main_header .main_body2 ul .tab3
+{
+    flex-basis: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section .main_header .main_body2 ul .tab4
+{
+    flex-basis: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section .main_header .main_body2 ul .tab5
+{
+    flex-basis: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section .main_header .main_body2 ul .tab6
+{
+    flex-basis: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section .main_header .main_body2 ul li a
+{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #1E1C31;
+}
+section .main_header .main_body2 ul li a:focus
+{
+    color: #4270EC;
+    font-weight: 600;
+    background-color: rgb(255, 221, 127);
+    padding: 10px 10px 10px 10px;
+}
+section .main_header .main_body2
+{
+    flex-basis: 100%;
+    padding-top: 50px;
+}
+}
+@media (max-width:550px)
+{
+    section::before
+    {
+        width: 250px;
+        height: 250px;
+    }
+    section .main_header .main_body2
+    {
+        text-align: center;
+    }
 }
