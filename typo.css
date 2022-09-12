@@ -18,3 +18,50 @@ body
     padding-left: 40px;
     padding-right: 40px;
 }
+@media(max-width:899px)
+{
+ul    
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 100px;
+    transition: all 0.5s;
+    text-align: center;
+    background-color: #ddbaaf;
+}
+a
+{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+a:focus
+{
+    color: #4270EC;
+    font-weight: 600;
+    background-color: rgb(255, 221, 127);
+    padding: 10px 10px 10px 10px;
+    transition: all 0.5s;
+}
+.tab
+{
+    flex-basis: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+li
+{
+    display: block;
+}
+}
+@media(min-width:900px) and (max-width:2560px)
+{
+    ul
+    {
+        display: none;
+    }
+}
