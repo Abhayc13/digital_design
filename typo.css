@@ -31,10 +31,6 @@ ul
     text-align: center;
     background-color: #ddbaaf;
 }
-img
-    {
-        padding-top: 10px;
-    }
 a
 {
     font-size: 20px;
@@ -50,6 +46,10 @@ a:focus
     background-color: rgb(255, 221, 127);
     padding: 10px 10px 10px 10px;
     transition: all 0.5s;
+}
+img
+{
+    padding-top: 10px;
 }
 .tab
 {
